@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Coin Flip</title>
+  </head>
+  	<img src="image/heads.jpg" id="coinImg">
+  	<button onClick='coinFlip()'>Flip Coin</button>
+  <body>
+  		<script type="text/javascript">
+  			
+  			var img_coin = document.getElementById("coinImg");
+  			var coinHeadsSrc = "image/heads.jpg";
+  			var coinTailssSrc = "image/tails.jpg";
+  			function coinFlip(){
+  					var randFlip = Math.floor(Math.random() * (2));
+  					alert(randFlip);
+  					if(randFlip==0){
+  						
+  						img_coin.src = coinHeadsSrc;
+  					}else if(randFlip== 1){
+  						 img_coin.src = coinTailssSrc;
+  					}
+  					else{
+
+  					}
+  			}
+  			function checkFlipImg(){
+
+  			}
+
+  		</script>
+
+  </body>
+</html>
